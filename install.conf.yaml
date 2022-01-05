@@ -1,7 +1,19 @@
-- clean: ['~']
+# Settings
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true
+
+- clean: ["~", "~/.config", "/usr/local/bin"]
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
 
 - link:
     ~/.gitconfig: gitconfig
+    ~/.gitignore:
     ~/.zshrc: zshrc
+    ~/Brewfile: Brewfile
 
 
