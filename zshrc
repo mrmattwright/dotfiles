@@ -9,6 +9,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+#at least moving passwords to a file that is gitignored for now
+source ~/.dotfiles/zsh/passwords.zsh
 
 source ~/.dotfiles/zsh/alias.zsh
 
@@ -90,7 +92,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -127,7 +128,6 @@ git config --global protocol.version 2
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-#Mobi storefront
-export GITLAB_TOKEN=6sGWZX54sKs5zDiKLdKv
+
 
 
