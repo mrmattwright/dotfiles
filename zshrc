@@ -2,6 +2,14 @@ if [ -x /usr/libexec/path_helper ]; then
   eval `/usr/libexec/path_helper -s`
 fi
 
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+
 source ~/.dotfiles/zsh/alias.zsh
 
 source ~/.dotfiles/zsh/plugins.zsh
@@ -9,12 +17,6 @@ source ~/.dotfiles/zsh/m1_dual_setup.zsh
 source ~/.dotfiles/zsh/programming.zsh
 source ~/.dotfiles/zsh/tools.zsh
 
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -129,7 +131,3 @@ git config --global protocol.version 2
 export GITLAB_TOKEN=6sGWZX54sKs5zDiKLdKv
 
 
-
-
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
