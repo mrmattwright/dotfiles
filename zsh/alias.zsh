@@ -14,6 +14,7 @@ alias ll='exa -lh --git'
 alias ls='exa'
 alias la='ls -a'
 alias lt='exa -lT --git'
+alias ex='exa -l  --no-permissions --no-user --git'
 
 alias g='git'
 alias be='bundle exec'
@@ -27,3 +28,6 @@ alias bservs='brew services start'
 alias bservx='brew services stop'
 
 alias re="cd $HOME/projects/rocketeer_engine && poetry shell"
+alias as="cd $HOME/projects/analytics-api-service && poetry shell"
+alias df="cd $HOME/.dotfiles"
+
