@@ -29,5 +29,6 @@ alias bservx='brew services stop'
 
 alias re="cd $HOME/projects/rocketeer_engine && poetry shell"
 alias as="cd $HOME/projects/analytics-api-service && poetry shell"
+alias rf="cd $HOME/projects/right_founder && poetry shell"
 alias df="cd $HOME/.dotfiles"
 
