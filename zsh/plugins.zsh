@@ -6,5 +6,6 @@ antigen bundle git
 antigen bundle heroku
 antigen bundle pip
 antigen bundle pyenv
+antigen bundle fzf
 
 antigen apply

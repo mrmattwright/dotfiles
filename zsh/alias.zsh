@@ -30,5 +30,10 @@ alias bservx='brew services stop'
 alias re="cd $HOME/projects/rocketeer_engine && poetry shell"
 alias as="cd $HOME/projects/analytics-api-service && poetry shell"
 alias rf="cd $HOME/projects/right_founder && poetry shell"
+
 alias df="cd $HOME/.dotfiles"
 
+
+alias ds="poetry run python  manage.py runserver 8001" 
+alias dlr="poetry run python manage.py livereload" 
+alias dptw="poetry run ptw -- --last-failed --new-first" 
