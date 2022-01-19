@@ -11,7 +11,7 @@ alias -g T='|tail'
 # Use exa instead of ls
 alias l='exa -1a'
 alias ll='exa -lh --git'
-alias ls='exa'
+alias ls='exa -l  --no-permissions --no-user --git'
 alias la='ls -a'
 alias lt='exa -lT --git'
 alias ex='exa -l  --no-permissions --no-user --git'
@@ -32,7 +32,6 @@ alias as="cd $HOME/projects/analytics-api-service && poetry shell"
 alias rf="cd $HOME/projects/right_founder && poetry shell"
 
 alias df="cd $HOME/.dotfiles"
-
 
 alias ds="poetry run python  manage.py runserver 8001" 
 alias dlr="poetry run python manage.py livereload" 

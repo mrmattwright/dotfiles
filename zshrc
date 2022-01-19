@@ -28,4 +28,3 @@ git config --global protocol.version 2
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 [ -f ~/.dotfiles/zsh/tools.zsh ] && source ~/.dotfiles/zsh/tools.zsh
-#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
