@@ -20,3 +20,9 @@ fi
 # Key bindings
 # ------------
 source "/opt/homebrew/opt/fzf/shell/key-bindings.zsh"
+
+
+# Fly.io
+# ------------
+export FLYCTL_INSTALL="$HOME/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
