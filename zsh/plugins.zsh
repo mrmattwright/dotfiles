@@ -7,5 +7,6 @@ antigen bundle heroku
 antigen bundle pip
 antigen bundle pyenv
 antigen bundle fzf
+antigen theme romkatv/powerlevel10k
 
 antigen apply
