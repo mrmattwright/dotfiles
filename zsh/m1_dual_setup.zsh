@@ -63,9 +63,9 @@ fi
 if is-intel || is-rosetta; then
     # brew based dependencies
     export CFLAGS="-I$BREW_OPT_PATH/openssl@1.1/include -I$BREW_OPT_PATH/readline/include -I$BREW_OPT_PATH/sqlite/include -I$BREW_OPT_PATH/zlib/include -I$BREW_OPT_PATH/xz/include -I$BREW_OPT_PATH/bzip2/include -I$(xcrun --show-sdk-path)/usr/include"
-    export CPPFLAGS="-I$BREW_OPT_PATH/openssl@1.1/include -I$BREW_OPT_PATH/readline/include -I$BREW_OPT_PATH/sqlite/include -I$BREW_OPT_PATH/zlib/include -I$BREW_OPT_PATH/xz/include -I$BREW_OPT_PATH/bzip2/include -I$(xcrun --show-sdk-path)/usr/include"
-    export LDFLAGS="-L$BREW_OPT_PATH/openssl@1.1/lib -L$BREW_OPT_PATH/readline/lib -L$BREW_OPT_PATH/sqlite/lib -L$BREW_OPT_PATH/zlib/lib -L$BREW_OPT_PATH/xz/lib -L$BREW_OPT_PATH/bzip2/lib"
-    export PKG_CONFIG_PATH="$BREW_OPT_PATH/openssl@1.1/lib/pkgconfig $BREW_OPT_PATH/readline/lib/pkgconfig $BREW_OPT_PATH/sqlite/lib/pkgconfig $BREW_OPT_PATH/zlib/lib/pkgconfig $BREW_OPT_PATH/zlib/xz/pkgconfig $BREW_OPT_PATH/zlib/bzip2/pkgconfig"
+    export CPPFLAGS="-I$BREW_OPT_PATH/openssl@1.1/include -I$BREW_OPT_PATH/readline/include -I$BREW_OPT_PATH/libpq/include -I$BREW_OPT_PATH/sqlite/include -I$BREW_OPT_PATH/zlib/include -I$BREW_OPT_PATH/xz/include -I$BREW_OPT_PATH/bzip2/include -I$(xcrun --show-sdk-path)/usr/include"
+    export LDFLAGS="-L$BREW_OPT_PATH/openssl@1.1/lib -L$BREW_OPT_PATH/readline/lib -L$BREW_OPT_PATH/sqlite/lib -L$BREW_OPT_PATH/libpq/lib -L$BREW_OPT_PATH/zlib/lib -L$BREW_OPT_PATH/xz/lib -L$BREW_OPT_PATH/bzip2/lib"
+    export PKG_CONFIG_PATH="$BREW_OPT_PATH/openssl@1.1/lib/pkgconfig $BREW_OPT_PATH/readline/lib/pkgconfig $BREW_OPT_PATH/libpq/lib/pkgconfig $BREW_OPT_PATH/sqlite/lib/pkgconfig $BREW_OPT_PATH/zlib/lib/pkgconfig $BREW_OPT_PATH/zlib/xz/pkgconfig $BREW_OPT_PATH/zlib/bzip2/pkgconfig"
 
     # Pyenv
     # export PYENV_ROOT="$HOME/.pyenv"
