@@ -29,6 +29,7 @@ brew "flyctl"
 brew "heroku/brew/heroku"
 #Go
 brew "go"
+brew "golangci-lint"
 #Casks
 cask "raycast"
 cask "warp"

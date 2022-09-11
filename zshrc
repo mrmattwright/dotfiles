@@ -9,8 +9,11 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+autoload -Uz compinit
+compinit
+
 #at least moving passwords to a file that is gitignored for now
-source ~/.dotfiles/zsh/passwords.zsh
+# source ~/.dotfiles/zsh/passwords.zsh
 source ~/.dotfiles/zsh/m1_dual_setup.zsh
 source ~/.dotfiles/zsh/programming.zsh
 source ~/.dotfiles/zsh/plugins.zsh
@@ -28,3 +31,4 @@ git config --global protocol.version 2
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 [ -f ~/.dotfiles/zsh/tools.zsh ] && source ~/.dotfiles/zsh/tools.zsh
+

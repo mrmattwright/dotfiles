@@ -17,8 +17,11 @@ to install. You even get a nice Brewfile.lock.json for version managment.
 ## Zsh
 I haven't done this yet, but I should set this up using an installer and get the shell theme set to [Powerlevel10k](https://github.com/romkatv/powerlevel10k) - I think I can do this with Antigen.
 
+## Fzf
+```/usr/local/opt/fzf/install``` to install fzf.
+
 ### Antigen 
 I'm managing zsh plugins using [Antigen](https://github.com/zsh-users/antigen) in the `zsh/plugins.zsh` file.
-
+ 
 ## Secrets Managment
-Many solutions exist here. For now I've gone low tech where I just have a git ignored passwords.zsh that gets loaded in zshrc. Better answers exist here (like integrating the 1Password CLI) but this will do for now. 
+Many solutions exist here. For now I've gone low tech where I just have a git ignored passwords.zsh that gets loaded in zshrc. Better answers exist here (like integrating the 1Password CLI) but this will do for now.  
