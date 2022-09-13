@@ -15,7 +15,7 @@ brew "exa"
 brew "xz"
 brew "fzf"
 # Databases and storage
-brew "postgresql"
+brew "postgresql@14"
 brew "sqlite"
 brew "redis"
 # Python
@@ -26,7 +26,6 @@ brew "ruby-build"
 brew "ruby-install"
 #Clis
 brew "flyctl"
-brew "heroku/brew/heroku"
 #Go
 brew "go"
 brew "golangci-lint"

@@ -32,3 +32,4 @@ git config --global protocol.version 2
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 [ -f ~/.dotfiles/zsh/tools.zsh ] && source ~/.dotfiles/zsh/tools.zsh
 
+export PATH="${HOMEBREW_PREFIX}/opt/openssl/bin:$PATH"
