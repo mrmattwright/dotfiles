@@ -1,5 +1,5 @@
 # Setup
-Install iterm and the apple developer toolkit (maybe I could move this into here at some point) 
+Install iterm and the apple developer toolkit (maybe I could move this into here at some point). For some reason I have it set up so that you need to clone the repo into ``$HOME/.dotfiles``, then the shmis work after you install. 
 
 # dotfiles
 I use [Dotbot](https://github.com/anishathalye/dotbot) to install and manage my dotfiles, once you've forked the repository you should run. 
