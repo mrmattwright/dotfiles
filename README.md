@@ -1,3 +1,6 @@
+#Setup
+Install iterm and the apple developer toolkit (maybe I could move this into here at some point) 
+
 # dotfiles
 I use [Dotbot](https://github.com/anishathalye/dotbot) to install and manage my dotfiles, once you've forked the repository you should run. 
 ```
