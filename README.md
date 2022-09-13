@@ -1,4 +1,4 @@
-#Setup
+# Setup
 Install iterm and the apple developer toolkit (maybe I could move this into here at some point) 
 
 # dotfiles
