@@ -17,8 +17,8 @@ brew bundle
 ```
 to install. You even get a nice Brewfile.lock.json for version managment.
 
-## Zsh
-I haven't done this yet, but I should set this up using an installer and get the shell theme set to [Powerlevel10k](https://github.com/romkatv/powerlevel10k) - I think I can do this with Antigen.
+## Theme
+[Powerlevel10k](https://github.com/romkatv/powerlevel10k) - is set up by antigen
 
 ## Fzf
 ```/usr/local/opt/fzf/install``` to install fzf.
