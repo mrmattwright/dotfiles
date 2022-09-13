@@ -24,6 +24,8 @@ brew "pyenv"
 brew "chruby"
 brew "ruby-build"
 brew "ruby-install"
+#Node 
+brew "nvm"
 #Clis
 brew "flyctl"
 #Go

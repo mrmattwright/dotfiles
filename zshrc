@@ -14,16 +14,11 @@ compinit
 
 #at least moving passwords to a file that is gitignored for now
 # source ~/.dotfiles/zsh/passwords.zsh
-source ~/.dotfiles/zsh/m1_dual_setup.zsh
+# source ~/.dotfiles/zsh/m1_dual_setup.zsh
 source ~/.dotfiles/zsh/programming.zsh
 source ~/.dotfiles/zsh/plugins.zsh
 
 source ~/.dotfiles/zsh/alias.zsh
-
-# Path to your oh-my-zsh installation.
-export ZSH="/Users/mrmattwright/.oh-my-zsh"
-ZSH_THEME="powerlevel10k/powerlevel10k" 
-source $ZSH/oh-my-zsh.sh
 
 # Makes pulls faster - so there(thanks intercom)
 git config --global protocol.version 2
