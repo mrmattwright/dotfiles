@@ -19,6 +19,7 @@ source ~/.dotfiles/zsh/programming.zsh
 source ~/.dotfiles/zsh/plugins.zsh
 
 source ~/.dotfiles/zsh/alias.zsh
+source ~/.dotfiles/zsh/montoux.zsh
 
 # Makes pulls faster - so there(thanks intercom)
 git config --global protocol.version 2

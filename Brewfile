@@ -20,10 +20,11 @@ brew "sqlite"
 brew "redis"
 # Python
 brew "pyenv"
+brew "poetry"
 #Ruby
-brew "chruby"
-brew "ruby-build"
-brew "ruby-install"
+#brew "chruby"
+#brew "ruby-build"
+#brew "ruby-install"
 #Node 
 brew "nvm"
 #Clis
@@ -31,7 +32,11 @@ brew "flyctl"
 #Go
 brew "go"
 brew "golangci-lint"
+brew "semgrep"
 #Casks
 cask "raycast"
 cask "warp"
+cask "qlstephen" #Quicklook plugin
 
+# Additional files
+# file ~/.Brewfile_Mountoux

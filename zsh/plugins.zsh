@@ -10,7 +10,9 @@ antigen bundle pip
 antigen bundle pyenv
 antigen bundle fzf
 antigen bundle dgnest/zsh-gvm-plugin
-
 antigen theme romkatv/powerlevel10k
+
+#Mountoux
+antigen bundle asdf
 
 antigen apply

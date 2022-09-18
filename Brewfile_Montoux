@@ -1,0 +1,12 @@
+#Go
+brew "semgrep"
+
+#Tools
+brew "awscli"
+brew "pre-commit"
+brew "jq"
+brew "asdf"
+brew "git-flow"
+
+#Casks
+cask "aws-vault"
