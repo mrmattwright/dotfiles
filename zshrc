@@ -12,6 +12,10 @@ fi
 autoload -Uz compinit
 compinit
 
+# https://superuser.com/questions/1245273/iterm2-version-3-individual-history-per-tab
+unsetopt inc_append_history
+unsetopt share_history
+
 #at least moving passwords to a file that is gitignored for now
 # source ~/.dotfiles/zsh/passwords.zsh
 # source ~/.dotfiles/zsh/m1_dual_setup.zsh
@@ -29,3 +33,5 @@ git config --global protocol.version 2
 [ -f ~/.dotfiles/zsh/tools.zsh ] && source ~/.dotfiles/zsh/tools.zsh
 
 export PATH="${HOMEBREW_PREFIX}/opt/openssl/bin:$PATH"
+export PATH="${HOME}/.cargo/bin:$PATH"
+

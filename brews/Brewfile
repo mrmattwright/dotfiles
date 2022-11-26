@@ -10,6 +10,7 @@ brew "readline"
 brew "wget"
 brew "zlib"
 brew "zsh"
+brew "libpq"
 #Command Line extras
 brew "exa"
 brew "xz"
@@ -38,5 +39,8 @@ cask "raycast"
 cask "warp"
 cask "qlstephen" #Quicklook plugin
 
+#Elixir
+brew "elixir"
+brew "erlang"
 # Additional files
 # file ~/.Brewfile_Mountoux

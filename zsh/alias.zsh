@@ -34,8 +34,6 @@ alias gs="cd $HOME/projects/goScraper"
 
 alias df="cd $HOME/.dotfiles"
 
-
-
 alias ds="poetry run python  manage.py runserver 8001" 
 alias dlr="poetry run python manage.py livereload" 
 alias dptw="poetry run ptw -- --last-failed --new-first" 

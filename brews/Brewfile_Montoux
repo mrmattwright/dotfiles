@@ -1,0 +1,28 @@
+#Go
+brew "go"
+brew "golangci-lint"
+brew "semgrep"
+
+#Tools
+brew "awscli"
+brew "pre-commit"
+brew "jq"
+brew "git-flow"
+brew "protobuf"
+
+#rust
+brew "rustup"
+
+#temporal 
+brew "tctl"
+
+#Packer
+tap "hashicorp/tap"
+brew "hashicorp/tap/packer"
+
+#Scipy
+brew "openblas" 
+brew "gfortran"
+
+#Casks
+cask "aws-vault"
