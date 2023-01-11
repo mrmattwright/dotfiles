@@ -22,6 +22,7 @@ brew "redis"
 # Python
 brew "pyenv"
 brew "poetry"
+brew "cmake"
 #Ruby
 #brew "chruby"
 #brew "ruby-build"
