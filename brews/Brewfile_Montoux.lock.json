@@ -604,7 +604,7 @@
     },
     "cask": {
       "aws-vault": {
-        "version": "6.6.1",
+        "version": "6.6.2",
         "options": {
           "full_name": "aws-vault"
         }
@@ -629,7 +629,7 @@
       "ventura": {
         "HOMEBREW_VERSION": "3.6.19",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "9646117b23299fb090f29027a5719a0334c0768f",
+        "Homebrew/homebrew-core": "d7615d6c41e44ff1fd4d74df6f503fc73d74c4e7",
         "CLT": "14.2.0.0.1.1668646533",
         "Xcode": "14.1",
         "macOS": "13.1"
