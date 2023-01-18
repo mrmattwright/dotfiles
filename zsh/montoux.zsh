@@ -3,6 +3,7 @@ alias docs="cd $HOME/projects/docs"
 alias kt="cd $HOME/projects/montoux-exec"
 
 alias wf="cd $HOME/projects/workflow"
+alias wfi="cd $HOME/projects/workflow-infrastructure"
 hash -d wfd="$HOME/projects/workflow" 
  
 export LDFLAGS="-L/opt/homebrew/opt/sqlite/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/bzip2/lib -L/opt/homebrew/opt/sqlite/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/bzip2/lib"
