@@ -17,7 +17,7 @@ unsetopt inc_append_history
 unsetopt share_history
 
 #at least moving passwords to a file that is gitignored for now
-# source ~/.dotfiles/zsh/passwords.zsh
+source ~/.dotfiles/zsh/passwords.zsh
 # source ~/.dotfiles/zsh/m1_dual_setup.zsh
 source ~/.dotfiles/zsh/programming.zsh
 source ~/.dotfiles/zsh/plugins.zsh
