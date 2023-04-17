@@ -36,3 +36,6 @@ alias df="cd $HOME/.dotfiles"
 alias ds="poetry run python  manage.py runserver 8001" 
 alias dlr="poetry run python manage.py livereload" 
 alias dptw="poetry run ptw -- --last-failed --new-first" 
+
+alias wfrs="curl -X POST -H 'Content-Type: application/json' -d @$HOME/Projects/workflow/workflow-defs/aws_scenario_demo_workflow_single.json http://localhost/api/v1/workflows/dynamic"
+alias wfrm="curl -X POST -H 'Content-Type: application/json' -d @$HOME/Projects/workflow/workflow-defs/aws_scenario_demo_workflow.json http://localhost/api/v1/workflows/dynamic"

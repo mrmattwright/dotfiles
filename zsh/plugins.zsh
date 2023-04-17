@@ -9,6 +9,7 @@ antigen bundle heroku
 antigen bundle pip
 antigen bundle pyenv
 antigen bundle fzf
+antigen bundle agkozak/zsh-z
 antigen bundle dgnest/zsh-gvm-plugin
 antigen theme romkatv/powerlevel10k
 

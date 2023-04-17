@@ -23,6 +23,7 @@ brew "hashicorp/tap/packer"
 
 #Terraform
 brew "terraform"
+brew "tflint"
 
 #Scipy
 brew "openblas" 

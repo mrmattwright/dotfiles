@@ -24,10 +24,11 @@ brew "redis"
 brew "pyenv"
 brew "poetry"
 brew "cmake"
+brew "ruff"
 #Ruby
-#brew "chruby"
-#brew "ruby-build"
-#brew "ruby-install"
+brew "chruby"
+brew "ruby-build"
+brew "ruby-install"
 #Node 
 brew "nvm"
 #Clis

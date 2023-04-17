@@ -3,7 +3,8 @@ alias docs="cd $HOME/projects/docs"
 alias kt="cd $HOME/projects/montoux-exec"
 
 alias wf="cd $HOME/projects/workflow"
-alias wfi="cd $HOME/projects/workflow-infrastructure"
+#alias wfi="cd $HOME/projects/workflow-infrastructure"
+hash -d wfi="$HOME/projects/workflow-infrastructure"
 hash -d wfd="$HOME/projects/workflow" 
  
 export LDFLAGS="-L/opt/homebrew/opt/sqlite/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/bzip2/lib -L/opt/homebrew/opt/sqlite/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/bzip2/lib"
@@ -11,9 +12,6 @@ export CPPFLAGS="-I/opt/homebrew/opt/sqlite/include -I/opt/homebrew/opt/zlib/inc
 export OPENBLAS="$(brew --prefix openblas)"
 
 export PATH=$PATH:$HOME/go/bin
-
-
-
 
 function __vault_profile {
     if [ "$AWS_VAULT" = "" ]; then

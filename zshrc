@@ -35,3 +35,6 @@ git config --global protocol.version 2
 export PATH="${HOMEBREW_PREFIX}/opt/openssl/bin:$PATH"
 export PATH="${HOME}/.cargo/bin:$PATH"
 
+
+zstyle ':completion:*' menu select
+fpath+=~/.zfunc
