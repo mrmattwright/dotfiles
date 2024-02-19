@@ -9,7 +9,6 @@ brew "pre-commit"
 brew "jq"
 brew "git-flow"
 brew "protobuf"
-brew "asdf"
 
 #rust
 brew "rustup"
@@ -17,13 +16,13 @@ brew "rustup"
 #temporal 
 brew "tctl"
 
-#Packer
-tap "hashicorp/tap"
-brew "hashicorp/tap/packer"
-
 #Terraform
 brew "terraform"
 brew "tflint"
+
+#frontend
+brew "nginx"
+brew "rover"
 
 #Scipy
 brew "openblas" 
@@ -31,3 +30,6 @@ brew "gfortran"
 
 #Casks
 cask "aws-vault"
+
+#ci/cd
+brew "act"

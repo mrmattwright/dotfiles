@@ -30,3 +30,11 @@ export PATH="$FLYCTL_INSTALL/bin:$PATH"
 # 1Password
 # ------------
 eval "$(op completion zsh)"; compdef _op op
+
+# Diable iTerm for use with Warp
+# ------------
+if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
+##### WHAT YOU WANT TO DISABLE FOR WARP - BELOW
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+##### WHAT YOU WANT TO DISABLE FOR WARP - ABOVE
+fi

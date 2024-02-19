@@ -1,7 +1,6 @@
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
-tap "snyk/tap"
+tap "redis-stack/redis-stack"
+
 # Core Utils
 brew "bzip2"
 brew "openblas"
@@ -17,23 +16,25 @@ brew "xz"
 brew "fzf"
 brew "htop"
 # Databases and storage
-brew "postgresql@14"
-brew "sqlite"
-brew "redis"
+brew "postgresql@15"
+brew "pgvector"
+
+#redis with search
+cask "redis-stack"
+
 # Python
 brew "pyenv"
 brew "poetry"
 brew "cmake"
 brew "ruff"
-#Ruby
-brew "chruby"
-brew "ruby-build"
-brew "ruby-install"
+brew "pipx"
+#mojo
+brew "modular"
 #Node 
 brew "nvm"
 #Clis
 brew "flyctl"
-brew "snyk"
+brew "gh"
 #Go
 brew "go"
 brew "golangci-lint"
@@ -43,8 +44,3 @@ cask "raycast"
 cask "warp"
 cask "qlstephen" #Quicklook plugin
 
-#Elixir
-brew "elixir"
-brew "erlang"
-# Additional files
-# file ~/.Brewfile_Mountoux

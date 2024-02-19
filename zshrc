@@ -18,7 +18,6 @@ unsetopt share_history
 
 #at least moving passwords to a file that is gitignored for now
 source ~/.dotfiles/zsh/passwords.zsh
-# source ~/.dotfiles/zsh/m1_dual_setup.zsh
 source ~/.dotfiles/zsh/programming.zsh
 source ~/.dotfiles/zsh/plugins.zsh
 
@@ -34,7 +33,9 @@ git config --global protocol.version 2
 
 export PATH="${HOMEBREW_PREFIX}/opt/openssl/bin:$PATH"
 export PATH="${HOME}/.cargo/bin:$PATH"
+export PATH="/Users/mrmattwright/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
 
 
 zstyle ':completion:*' menu select
 fpath+=~/.zfunc
+
