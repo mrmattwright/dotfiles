@@ -8,13 +8,14 @@ alias -g SL='|sort|less'
 alias -g S='|sort'
 alias -g T='|tail'
 
-# Use exa instead of ls
-alias l='exa -1a'
-alias ll='exa -lh --git'
-alias ls='exa -l  --no-permissions --no-user --git'
+# Use eza instead of ls
+alias l='eza -1a'
+alias ll='eza -lh --git'
+alias ls='eza -l  --no-permissions --no-user --git'
 alias la='ls -a'
-alias lt='exa -lT --git'
-alias ex='exa -l  --no-permissions --no-user --git'
+alias lm='ls --sort=modified'
+alias lt='eza -lT --no-permissions --no-user --git'
+alias ex='eza -l  --no-permissions --no-user --git'
 
 alias g='git'
 alias be='bundle exec'
@@ -31,16 +32,13 @@ alias bservx='brew services stop'
 alias re="cd $HOME/projects/rocketeer_engine && poetry shell"
 alias rw="cd $HOME/projects/rocketeer_web && nvm use 16.13.1"
 
-alias df="cd $HOME/.dotfiles && code . "
+alias df="cd $HOME/.dotfiles && code dotfiles.code-workspace"
 
 # Opio Chat
 alias dc="cd $HOME/projects/doc-chat && poetry shell"
 
 # Matt Operating Manual
 alias mmw="cd $HOME/projects/mrmattwright"
-
-# Open Model
-alias mc="cd $HOME/projects/model_copilot && source .venv/bin/activate"
 
 # Grizzwold
 alias gz="cd $HOME/projects/grizzwold && poetry shell"

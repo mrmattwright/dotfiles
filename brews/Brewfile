@@ -11,10 +11,11 @@ brew "zlib"
 brew "zsh"
 brew "libpq"
 #Command Line extras
-brew "exa"
+brew "eza"
 brew "xz"
 brew "fzf"
 brew "htop"
+brew "direnv"
 # Databases and storage
 brew "postgresql@15"
 brew "pgvector"
@@ -28,6 +29,7 @@ brew "poetry"
 brew "cmake"
 brew "ruff"
 brew "pipx"
+brew "uv"
 #mojo
 brew "modular"
 #Node 

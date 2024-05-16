@@ -33,3 +33,6 @@ cask "aws-vault"
 
 #ci/cd
 brew "act"
+
+#Pulumi
+brew "pulumi"

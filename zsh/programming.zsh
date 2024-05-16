@@ -1,8 +1,15 @@
-#Chromedriver 
+#Chromedriver and binaries
 export PATH="$HOME/projects/bin:$PATH"
 
+# Poetry
 export PATH="$HOME/Library/Application Support/pypoetry-x86/bin:$PATH"
 export PATH="$HOMEBREW_PREFIX/bin:$PATH"
+
+# uv - but rust
+source $HOME/.cargo/env
+
+# rye
+source "$HOME/.rye/env"
 
 #python
 export PYENV_ROOT="$HOME/.pyenv"
