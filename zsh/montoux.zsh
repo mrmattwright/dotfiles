@@ -1,7 +1,5 @@
 alias mon="cd $HOME/projects/monty"
 alias docs="cd $HOME/projects/docs"
-alias kt="cd $HOME/projects/montoux-exec"
-alias ag="cd $HOME/projects/autogen"
 
 alias wf="cd $HOME/projects/workflow"
 alias wfi="cd $HOME/projects/workflow-infrastructure"
@@ -13,6 +11,8 @@ alias mc="cd $HOME/projects/model-copilot"
 # Model Copilot Core + web 
 alias mcc="cd $HOME/projects/model-copilot/model-copilot-core"
 alias mcw="cd $HOME/projects/model-copilot/model-copilot-web"
+
+alias gwl="cd $HOME/projects/genworth-life-apl"
 
  
 export LDFLAGS="-L/opt/homebrew/opt/sqlite/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/bzip2/lib -L/opt/homebrew/opt/sqlite/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/bzip2/lib"

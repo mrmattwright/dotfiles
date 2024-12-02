@@ -42,3 +42,6 @@ fpath+=~/.zfunc
 . "$HOME/.cargo/env"
 
 eval "$(direnv hook zsh)"
+export MODULAR_HOME="/Users/mrmattwright/.modular"
+export PATH="/Users/mrmattwright/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
+export PATH="$PATH:/Users/mrmattwright/.modular/bin"

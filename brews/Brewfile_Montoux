@@ -36,3 +36,6 @@ brew "act"
 
 #Pulumi
 brew "pulumi"
+
+#Azure 
+brew "azure-cli"

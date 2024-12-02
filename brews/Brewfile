@@ -37,6 +37,7 @@ brew "nvm"
 #Clis
 brew "flyctl"
 brew "gh"
+brew "1password-cli"
 #Go
 brew "go"
 brew "golangci-lint"

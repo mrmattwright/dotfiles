@@ -1,5 +1,16 @@
 [user]
 	name = mrmattwright
-	email = matt@mrmattwright.com
+	email = matt@sudden.co.nz
 [protocol]
 	version = 2
+[core]
+	excludesfile = /Users/mrmattwright/.gitignore_global
+[pull]
+	rebase = true
+[credential]
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[credential "https://git.montoux.net"]
+	provider = generic
