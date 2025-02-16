@@ -39,7 +39,7 @@ export PATH="/Users/mrmattwright/.modular/pkg/packages.modular.com_mojo/bin:$PAT
 zstyle ':completion:*' menu select
 fpath+=~/.zfunc
 
-. "$HOME/.cargo/env"
+#. "$HOME/.cargo/env"
 
 eval "$(direnv hook zsh)"
 export MODULAR_HOME="/Users/mrmattwright/.modular"

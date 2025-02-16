@@ -1,5 +1,5 @@
 [user]
-	name = mrmattwright
+	name = Matt Wright
 	email = matt@sudden.co.nz
 [protocol]
 	version = 2
@@ -19,5 +19,3 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-[credential "https://huggingface.co"]
-	provider = generic

@@ -29,15 +29,13 @@ brew "poetry"
 brew "cmake"
 brew "ruff"
 brew "pipx"
+brew "rust"
 brew "uv"
-#mojo
-brew "modular"
 #Node 
 brew "nvm"
 #Clis
 brew "flyctl"
 brew "gh"
-brew "1password-cli"
 #Go
 brew "go"
 brew "golangci-lint"
@@ -46,4 +44,6 @@ brew "semgrep"
 cask "raycast"
 cask "warp"
 cask "qlstephen" #Quicklook plugin
+cask "1password"
+cask "1password-cli"
 
