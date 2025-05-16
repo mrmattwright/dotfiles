@@ -1,11 +1,17 @@
 {
-	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"path": "../.warp/launch_configurations"
-		}
-	],
-	"settings": {}
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../.warp/launch_configurations"
+    },
+    {
+      "path": "../.ssh"
+    },
+    {
+      "path": "../.aws"
+    }
+  ],
+  "settings": {}
 }

@@ -15,5 +15,4 @@
     ~/.gitignore:
     ~/.zshrc: zshrc
     ~/Brewfile: Brewfile
-
-
+    ~/.config/starship.toml: config/starship.toml

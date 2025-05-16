@@ -1,0 +1,42 @@
+# Get schema-aware completions in your editor
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = true
+
+# ---- prompt layout ---------------------------------------------------------
+format = """\
+$directory$git_branch$git_state$git_status$nodejs $python \
+$time$character\
+"""
+
+[directory]
+style = "bold cyan"
+truncation_length = 3
+
+[git_branch]
+symbol = " "    # Nerd-Font Git symbol
+style = "purple"
+
+[git_status]
+disabled = false
+format = "[$all_status]($style) "
+style = "yellow"
+
+[nodejs]
+format = "🟢 [$symbol($version )]($style)"
+
+[python]
+symbol = "🐍 "
+pyenv_version_name = true
+format = "[$symbol$virtualenv]($style)"
+# List of python binaries to try (in order)
+python_binary = ["./.venv/bin/python", "python3", "python"]
+
+
+[time]
+disabled = false
+time_format = "%H:%M"
+style = "dim white"
+
+[aws]
+disabled = true

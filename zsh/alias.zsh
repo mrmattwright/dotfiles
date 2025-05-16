@@ -48,3 +48,12 @@ alias ds="cd $HOME/projects/drive-sorter && poetry env activate"
 
 # Projects
 alias p="cd $HOME/projects"
+
+# Carbon Invoice
+alias le="cd $HOME/projects/local-env"
+
+# Gaspatchio
+alias gs="cd $HOME/projects/gaspatchio"
+alias gsp="cd $HOME/projects/gaspatchio/gaspatchio-core/bindings/python"
+alias gsm="cd $HOME/projects/gaspatchio/gaspatchio-mix"
+alias gsd="cd $HOME/projects/gaspatchio/gaspatchio-docs
