@@ -49,4 +49,4 @@ export PATH="$PATH:/Users/mrmattwright/.local/bin"
 
 # starship
 eval "$(starship init zsh)"
-PROMPT="${PROMPT}"$'\n'
+PROMPT="${PROMPT}"$'\n'[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

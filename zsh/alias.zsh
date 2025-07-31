@@ -56,4 +56,4 @@ alias le="cd $HOME/projects/local-env"
 alias gs="cd $HOME/projects/gaspatchio"
 alias gsp="cd $HOME/projects/gaspatchio/gaspatchio-core/bindings/python"
 alias gsm="cd $HOME/projects/gaspatchio/gaspatchio-mix"
-alias gsd="cd $HOME/projects/gaspatchio/gaspatchio-docs
+alias gsd="cd $HOME/projects/gaspatchio/gaspatchio-docs"

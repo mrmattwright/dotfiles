@@ -32,21 +32,23 @@ cask "redis-stack"
 
 # Python
 brew "pyenv"
-brew "poetry"
 brew "cmake"
 brew "ruff"
 brew "pipx"
-brew "rust"
 brew "uv"
+
+# Rust 
+brew "rust"
+
 #Node 
 brew "nvm"
+
 #Clis
 brew "flyctl"
 brew "gh"
-#Go
-brew "go"
-brew "golangci-lint"
+
 brew "semgrep"
+
 #Casks
 cask "raycast"
 cask "warp"
@@ -54,5 +56,6 @@ cask "warp"
 #Quicklooks
 cask "qlstephen" #Quicklook plugin
 
+# 1Password
 cask "1password-cli"
 
