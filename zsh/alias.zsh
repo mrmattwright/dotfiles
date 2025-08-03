@@ -55,5 +55,10 @@ alias le="cd $HOME/projects/local-env"
 # Gaspatchio
 alias gs="cd $HOME/projects/gaspatchio"
 alias gsp="cd $HOME/projects/gaspatchio/gaspatchio-core/bindings/python"
+alias gscore="cd $HOME/projects/gaspatchio/gaspatchio-core/core"
 alias gsm="cd $HOME/projects/gaspatchio/gaspatchio-mix"
 alias gsd="cd $HOME/projects/gaspatchio/gaspatchio-docs"
+alias gst="cd $HOME/projects/gst"
+
+#claude yolo
+alias claude-yolo="claude --dangerously-skip-permissions"

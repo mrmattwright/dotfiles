@@ -12,6 +12,7 @@ brew "zlib"
 #shell
 brew "zsh"
 brew "starship"
+brew "tmux"
 
 #perf
 brew "btop"
@@ -22,6 +23,7 @@ brew "xz"
 brew "fzf"
 brew "htop"
 brew "direnv"
+brew "ngrok"
 
 # Databases and storage
 brew "postgresql@15"

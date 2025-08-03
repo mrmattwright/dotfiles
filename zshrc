@@ -50,3 +50,18 @@ export PATH="$PATH:/Users/mrmattwright/.local/bin"
 # starship
 eval "$(starship init zsh)"
 PROMPT="${PROMPT}"$'\n'[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+setopt INC_APPEND_HISTORY SHARE_HISTORY
+export FZF_DEFAULT_OPTS='--tmux center,100%,40% --reverse --border'
+export PROMPT_COMMAND='history -a; history -c; history -r'
+
+fpath+=~/.zfunc; autoload -Uz compinit; compinit
+
+# bun completions
+[ -s "/Users/mrmattwright/.bun/_bun" ] && source "/Users/mrmattwright/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
