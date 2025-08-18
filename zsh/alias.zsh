@@ -60,5 +60,11 @@ alias gsm="cd $HOME/projects/gaspatchio/gaspatchio-mix"
 alias gsd="cd $HOME/projects/gaspatchio/gaspatchio-docs"
 alias gst="cd $HOME/projects/gst"
 
-#claude yolo
+#agents
 alias claude-yolo="claude --dangerously-skip-permissions"
+alias amp-yolo="claude --dangerously-allow-all"
+
+# tere
+alias teb="cd $HOME/projects/tere/tere-fastapi"
+alias tef="cd $HOME/projects/tere/tere-svelte"
+alias te="cd $HOME/projects/tere"

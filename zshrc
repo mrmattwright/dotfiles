@@ -49,7 +49,9 @@ export PATH="$PATH:/Users/mrmattwright/.local/bin"
 
 # starship
 eval "$(starship init zsh)"
-PROMPT="${PROMPT}"$'\n'[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# nvm bash completion
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -65,3 +67,4 @@ fpath+=~/.zfunc; autoload -Uz compinit; compinit
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+ulimit -n 4096
