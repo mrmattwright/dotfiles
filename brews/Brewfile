@@ -13,6 +13,8 @@ brew "zlib"
 brew "zsh"
 brew "starship"
 brew "tmux"
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
 
 #perf
 brew "btop"
@@ -23,7 +25,9 @@ brew "xz"
 brew "fzf"
 brew "htop"
 brew "direnv"
-brew "ngrok"
+brew "atuin"   # searchable shell history
+brew "bat"     # cat with syntax highlighting
+brew "zoxide"  # smart cd replacement
 
 # Databases and storage
 brew "postgresql@15"

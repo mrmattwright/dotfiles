@@ -12,7 +12,10 @@ unsetopt share_history
 #at least moving passwords to a file that is gitignored for now
 source ~/.dotfiles/zsh/passwords.zsh
 source ~/.dotfiles/zsh/programming.zsh
-#source ~/.dotfiles/zsh/plugins.zsh
+
+# Warp-like shell plugins (installed via brew)
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source ~/.dotfiles/zsh/alias.zsh
 source ~/.dotfiles/zsh/montoux.zsh
@@ -50,6 +53,12 @@ export PATH="$PATH:/Users/mrmattwright/.local/bin"
 # starship
 eval "$(starship init zsh)"
 
+# smart cd replacement
+eval "$(zoxide init zsh)"
+
+# searchable shell history (replaces ctrl-r)
+eval "$(atuin init zsh)"
+
 # nvm bash completion
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
@@ -83,3 +92,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# Fix for macOS temp directory permissions issue
+# Use /tmp instead of system temp directory which sometimes has incorrect ownership
+export TMPDIR="/tmp"

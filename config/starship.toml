@@ -4,39 +4,57 @@
 add_newline = true
 
 # ---- prompt layout ---------------------------------------------------------
+# Warp-inspired: directory + git on one line, prompt character on next
 format = """\
-$directory$git_branch$git_state$git_status$nodejs $python \
-$time$character\
+[](fg:#3B4261)\
+$directory\
+[](fg:#3B4261 bg:#3B4261)\
+$git_branch\
+$git_status\
+[](fg:#3B4261)\
+$nodejs$python\
+$fill\
+$time
+$character\
 """
 
+[fill]
+symbol = " "
+
 [directory]
-style = "bold cyan"
-truncation_length = 3
+format = "[  $path ]($style)"
+style = "bold fg:#D8DEE9 bg:#3B4261"
+truncation_length = 4
+truncation_symbol = "…/"
 
 [git_branch]
-symbol = " "    # Nerd-Font Git symbol
-style = "purple"
+symbol = " "
+format = "[ $symbol$branch ]($style)"
+style = "bold fg:#A3BE8C bg:#3B4261"
 
 [git_status]
 disabled = false
-format = "[$all_status]($style) "
-style = "yellow"
+format = "[($ahead_behind$conflicted$untracked$modified$staged$renamed$deleted )]($style)"
+style = "fg:#EBCB8B bg:#3B4261"
 
 [nodejs]
-format = "🟢 [$symbol($version )]($style)"
+format = " [🟢 $version]($style)"
 
 [python]
 symbol = "🐍 "
 pyenv_version_name = true
-format = "[$symbol$virtualenv]($style)"
-# List of python binaries to try (in order)
+format = " [$symbol$virtualenv]($style)"
 python_binary = ["./.venv/bin/python", "python3", "python"]
-
 
 [time]
 disabled = false
 time_format = "%H:%M"
 style = "dim white"
+format = "[$time]($style)"
+
+[character]
+success_symbol = "[❯](bold cyan)"
+error_symbol = "[❯](bold red)"
 
 [aws]
 disabled = true

@@ -16,3 +16,4 @@
     ~/.zshrc: zshrc
     ~/Brewfile: Brewfile
     ~/.config/starship.toml: config/starship.toml
+    ~/.tmux.conf: tmux.conf

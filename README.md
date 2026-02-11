@@ -1,40 +1,43 @@
 # Setup
-Install iterm and the apple developer toolkit (maybe I could move this into here
-at some point). For some reason I have it set up so that you need to clone the
-repo into ``$HOME/.dotfiles``, then the shmis work after you install. 
-
-# dotfiles
-I use [Dotbot](https://github.com/anishathalye/dotbot) to install and manage my
-dotfiles, once you've forked the repository you should run. 
+Install iTerm2 and the Apple developer toolkit. Clone the repo into `$HOME/.dotfiles`, then run:
 ```
 ./install
 ```
-This essentially sets up Symbolic links etc.  
-
-Another excellent alternative seems to be [https://yadm.io/](https://yadm.io/) I
-could be tempted to start again here. The secrets management looks pretty nice.
+This uses [Dotbot](https://github.com/anishathalye/dotbot) to create symlinks for zshrc, gitconfig, starship.toml, tmux.conf, etc.
 
 ## Brewfile
-Manage updates to brew with Brewfile and using 
+Multiple Brewfiles in `brews/` — one per client/project. Install with:
 ```
 brew bundle install --file brews/Brewfile
 ```
 
-There are multiple brew files in brews/ one for each client/project
+## Shell
+- **Prompt**: [Starship](https://starship.rs/) — configured in `config/starship.toml`
+- **Plugins**: `zsh-autosuggestions` and `zsh-syntax-highlighting` installed via Homebrew, sourced directly in zshrc
+- **History**: [atuin](https://github.com/atuinsh/atuin) — searchable shell history (replaces Ctrl+R)
+- **Navigation**: [zoxide](https://github.com/ajeetdsouza/zoxide) — smart `cd` replacement (`z` command)
+- **Listings**: [eza](https://github.com/eza-community/eza) — modern `ls` replacement (aliased in `zsh/alias.zsh`)
+- **Fuzzy finder**: [fzf](https://github.com/junegunn/fzf) — configured in `zsh/tools.zsh`
+- **File viewer**: [bat](https://github.com/sharkdp/bat) — `cat` with syntax highlighting
 
-to install. You even get a nice Brewfile.lock.json for version managment.
+## tmux
+Config in `tmux.conf`. Prefix is `Ctrl+A`. Includes vim-style pane navigation, mouse support, and extended keys for apps like Claude Code.
 
-## Theme
-[Powerlevel10k](https://github.com/romkatv/powerlevel10k) - is set up by antigen
+Plugins managed via [tpm](https://github.com/tmux-plugins/tpm): tmux-powerline, tmux-resurrect, tmux-continuum.
 
-## Fzf
-```/usr/local/opt/fzf/install``` to install fzf.
+## iTerm2
+Aiming for a Warp-like setup:
+- **Theme**: Minimal with Nord color scheme
+- **Font**: Nerd Font (for Starship icons)
+- **Shell Integration**: enabled for command marks
 
-### Antigen 
-I'm managing zsh plugins using [Antigen](https://github.com/zsh-users/antigen)
-in the `zsh/plugins.zsh` file.
- 
-## Secrets Managment
-Many solutions exist here. For now I've gone low tech where I just have a git
-ignored passwords.zsh that gets loaded in zshrc. Better answers exist here (like
-integrating the 1Password CLI) but this will do for now.  
+## Secrets Management
+Git-ignored `passwords.zsh` loaded in zshrc. 1Password CLI is available for future integration.
+
+## Zsh Config Structure
+- `zshrc` — main config, sources everything below
+- `zsh/alias.zsh` — aliases (eza, git, project shortcuts)
+- `zsh/tools.zsh` — fzf, 1Password CLI, iTerm2 shell integration
+- `zsh/programming.zsh` — pyenv, nvm, mojo, poetry paths
+- `zsh/montoux.zsh` — work-specific aliases and paths
+- `zsh/passwords.zsh` — secrets (gitignored)
