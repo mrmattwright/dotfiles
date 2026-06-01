@@ -60,6 +60,20 @@ alias gsm="cd $HOME/projects/gaspatchio/gaspatchio-mix"
 alias gsd="cd $HOME/projects/gaspatchio/gaspatchio-docs"
 alias gst="cd $HOME/projects/gst"
 
+# Orac (Mac Mini)
+alias orac='et orac -c "tmux attach -t main || tmux new -s main"'
+alias orac-gas='et orac -c "tmux new-session -A -s gas -c ~/projects/gaspatchio/gaspatchio-core '\''claude --dangerously-skip-permissions'\''"'
+alias orac-gaspy='et orac -c "tmux new-session -A -s gaspy -c ~/projects/gaspatchio/gaspatchio-core '\''claude --dangerously-skip-permissions'\''"'
+alias orac-gasdocs='et orac -c "tmux new-session -A -s gasdocs -c ~/projects/gaspatchio/gaspatchio-docs '\''claude --dangerously-skip-permissions'\''"'
+alias orac-media='et orac -c "tmux new-session -A -s media -c ~/projects/media-server '\''claude --dangerously-skip-permissions'\''"'
+
+# Orac via mosh (UDP, survives laptop sleep/roaming; attaches the SAME tmux sessions as the et aliases above)
+alias orac-m='mosh orac -- bash -lc "tmux attach -t main || tmux new -s main"'
+alias orac-gas-m='mosh orac -- bash -lc "tmux new-session -A -s gas -c ~/projects/gaspatchio/gaspatchio-core '\''claude --dangerously-skip-permissions'\''"'
+alias orac-gaspy-m='mosh orac -- bash -lc "tmux new-session -A -s gaspy -c ~/projects/gaspatchio/gaspatchio-core '\''claude --dangerously-skip-permissions'\''"'
+alias orac-gasdocs-m='mosh orac -- bash -lc "tmux new-session -A -s gasdocs -c ~/projects/gaspatchio/gaspatchio-docs '\''claude --dangerously-skip-permissions'\''"'
+alias orac-media-m='mosh orac -- bash -lc "tmux new-session -A -s media -c ~/projects/media-server '\''claude --dangerously-skip-permissions'\''"'
+
 #agents
 alias claude-yolo="claude --dangerously-skip-permissions"
 alias amp-yolo="claude --dangerously-allow-all"

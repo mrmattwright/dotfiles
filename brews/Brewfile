@@ -13,6 +13,7 @@ brew "zlib"
 brew "zsh"
 brew "starship"
 brew "tmux"
+brew "mosh"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
