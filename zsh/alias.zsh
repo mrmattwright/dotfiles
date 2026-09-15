@@ -60,21 +60,34 @@ alias gsm="cd $HOME/projects/gaspatchio/gaspatchio-mix"
 alias gsd="cd $HOME/projects/gaspatchio/gaspatchio-docs"
 alias gst="cd $HOME/projects/gst"
 
-# Orac (Mac Mini)
-alias orac='et orac -c "tmux attach -t main || tmux new -s main"'
-alias orac-gas='et orac -c "tmux new-session -A -s gas -c ~/projects/gaspatchio/gaspatchio-core '\''claude --dangerously-skip-permissions'\''"'
-alias orac-gaspy='et orac -c "tmux new-session -A -s gaspy -c ~/projects/gaspatchio/gaspatchio-core '\''claude --dangerously-skip-permissions'\''"'
-alias orac-gasdocs='et orac -c "tmux new-session -A -s gasdocs -c ~/projects/gaspatchio/gaspatchio-docs '\''claude --dangerously-skip-permissions'\''"'
-alias orac-media='et orac -c "tmux new-session -A -s media -c ~/projects/media-server '\''claude --dangerously-skip-permissions'\''"'
+# Orac (Mac Mini) - all via mosh (UDP, survives laptop sleep/roaming)
+# pattern: orac-<project>[-cx]   bare = claude, -cx = codex; both in auto mode
+alias orac='mosh orac -- bash -lc "tmux attach -t main || tmux new -s main"'
+alias orac-main='mosh orac -- bash -lc "tmux new-session -A -s main -c ~/projects '\''claude --permission-mode auto'\''"'
+alias orac-main2='mosh orac -- bash -lc "tmux new-session -A -s main2 -c ~/projects"'
+alias orac-gas='mosh orac -- bash -lc "tmux new-session -A -s gas -c ~/projects/gaspatchio/gaspatchio-oss '\''claude --permission-mode auto'\''"'
+alias orac-gaspy='mosh orac -- bash -lc "tmux new-session -A -s gaspy -c ~/projects/gaspatchio/gaspatchio-oss '\''claude --permission-mode auto'\''"'
+alias orac-gasdocs='mosh orac -- bash -lc "tmux new-session -A -s gasdocs -c ~/projects/gaspatchio/gaspatchio-docs '\''claude --permission-mode auto'\''"'
+alias orac-lab='mosh orac -- bash -lc "tmux new-session -A -s lab -c ~/projects/gaspatchio/gaspatchio-lab '\''claude --permission-mode auto'\''"'
+alias orac-laby='mosh orac -- bash -lc "tmux new-session -A -s laby -c ~/projects/gaspatchio/gaspatchio-lab '\''claude --permission-mode auto'\''"'
+alias orac-media='mosh orac -- bash -lc "tmux new-session -A -s media -c ~/projects/media-server '\''claude --dangerously-skip-permissions'\''"'
+alias orac-rock='mosh orac -- bash -lc "tmux new-session -A -s rock -c ~/projects/rocketeer '\''claude --dangerously-skip-permissions'\''"'
+alias orac-rocky='mosh orac -- bash -lc "tmux new-session -A -s rocky -c ~/projects/rocketeer '\''claude --dangerously-skip-permissions'\''"'
+alias orac-golf='mosh orac -- bash -lc "tmux new-session -A -s golf -c ~/projects/golf-stats '\''claude --dangerously-skip-permissions'\''"'
+alias orac-mar='mosh orac -- bash -lc "tmux new-session -A -s mar -c ~/projects/xl-marinade '\''claude --permission-mode auto'\''"'
+alias orac-opio-web='mosh orac -- bash -lc "tmux new-session -A -s opio-web -c ~/projects/opio-web '\''claude --permission-mode auto'\''"'
 
-# Orac via mosh (UDP, survives laptop sleep/roaming; attaches the SAME tmux sessions as the et aliases above)
-alias orac-m='mosh orac -- bash -lc "tmux attach -t main || tmux new -s main"'
-alias orac-gas-m='mosh orac -- bash -lc "tmux new-session -A -s gas -c ~/projects/gaspatchio/gaspatchio-core '\''claude --dangerously-skip-permissions'\''"'
-alias orac-gaspy-m='mosh orac -- bash -lc "tmux new-session -A -s gaspy -c ~/projects/gaspatchio/gaspatchio-core '\''claude --dangerously-skip-permissions'\''"'
-alias orac-gasdocs-m='mosh orac -- bash -lc "tmux new-session -A -s gasdocs -c ~/projects/gaspatchio/gaspatchio-docs '\''claude --dangerously-skip-permissions'\''"'
-alias orac-media-m='mosh orac -- bash -lc "tmux new-session -A -s media -c ~/projects/media-server '\''claude --dangerously-skip-permissions'\''"'
+# Codex on orac - own tmux sessions (<project>-cx)
+# ~/bin/codex-longrun (on orac) = workspace-write + network + writable .git + -a never
+alias orac-gas-cx='mosh orac -- bash -lc "tmux new-session -A -s gas-cx -c ~/projects/gaspatchio/gaspatchio-oss '\''/Users/mrmattwright/bin/codex-longrun'\''"'
+alias orac-gaspy-cx='mosh orac -- bash -lc "tmux new-session -A -s gaspy-cx -c ~/projects/gaspatchio/gaspatchio-oss '\''/Users/mrmattwright/bin/codex-longrun'\''"'
+alias orac-gasdocs-cx='mosh orac -- bash -lc "tmux new-session -A -s gasdocs-cx -c ~/projects/gaspatchio/gaspatchio-docs '\''/Users/mrmattwright/bin/codex-longrun'\''"'
+alias orac-lab-cx='mosh orac -- bash -lc "tmux new-session -A -s lab-cx -c ~/projects/gaspatchio/gaspatchio-lab '\''/Users/mrmattwright/bin/codex-longrun'\''"'
+alias orac-laby-cx='mosh orac -- bash -lc "tmux new-session -A -s laby-cx -c ~/projects/gaspatchio/gaspatchio-lab '\''/Users/mrmattwright/bin/codex-longrun'\''"'
+alias orac-opio-web-cx='mosh orac -- bash -lc "tmux new-session -A -s opio-web-cx -c ~/projects/opio-web '\''/Users/mrmattwright/bin/codex-longrun'\''"'
 
 #agents
+alias claude-auto="claude --permission-mode auto"
 alias claude-yolo="claude --dangerously-skip-permissions"
 alias amp-yolo="claude --dangerously-allow-all"
 
